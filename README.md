@@ -1,4 +1,4 @@
-#Polls Project Django
+# Polls Project Django
 
 This is a polls project created with Django. 
 
