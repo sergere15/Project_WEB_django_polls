@@ -1,0 +1,37 @@
+
+{% load socialaccount %}
+{% providers_media_js %}
+{% load static %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
+
+<html>
+	
+	<head>
+		<title>MAIN PAGE</title>
+	</head>
+	<body>
+
+<a>Welcome</a> {{user.first_name}}
+<br>
+
+<ul align="center">
+	<li><a href="./polls/">Go to polls</a></li>
+	
+	<li><a href="./admin/">LogIn as an Admin</a></li>
+
+	<li><a href="./admin/polls/question/add/">Create polls</a></li>
+
+	<!-- <li><a href="./accounts/signup//">SING UP</a></li>
+	<li><a href="./accounts/login/">SING IN</a></li>  -->
+
+	<li><a href="{% provider_login_url "google" %}">Google Connect</a></li>
+</ul>
+
+
+
+	</body>
+</html>
+
+
